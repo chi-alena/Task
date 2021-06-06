@@ -15,7 +15,7 @@ docker build --tag task .
 ## Проверка работоспособности
 
 ```
-docker run --rm task samtools --version
+docker run task samtools --version
 samtools 1.12
 Using htslib 1.12
 Copyright (C) 2021 Genome Research Ltd.
@@ -46,3 +46,10 @@ HTSlib URL scheme handlers present:
     crypt4gh-needed:	 crypt4gh
     mem:	 mem
 ```
+
+ ```
+ docker run task samtools --help | head -n 3
+
+ Program: samtools (Tools for alignments in the SAM format)
+ Version: 1.12 (using htslib 1.12)
+    ```
