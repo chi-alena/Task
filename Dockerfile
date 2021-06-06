@@ -48,3 +48,7 @@ RUN wget https://github.com/gt1/biobambam/archive/refs/tags/0.0.191-release-2015
     cd biobambam-0.0.191-release-20150401083643 && \
     autoreconf -i -f && \
     ./configure --with-libmaus=/usr/local/include/libmaus/ --prefix=${HOME}/biobambam
+
+# экспортируем переменную окружения для того чтобы
+# SAMtools искала библиотеки по правильным путям
+ENV LD_LIBRARY_PATH=/usr/local/lib
