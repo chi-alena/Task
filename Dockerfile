@@ -17,3 +17,10 @@ RUN apt-get update && \
         libtool \
         pkg-config \
         wget
+
+# устанавливаем libdeflate 1.7 для сборки SAMtools
+RUN wget https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.7.tar.gz && \
+tar -xvf v1.7.tar.gz && \
+cd libdeflate-1.7 && \
+make && \
+make install
