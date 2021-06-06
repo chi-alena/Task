@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-# комментарий что ты делаешь
+# устанавливаем библиотеки для сборки из исходных кодов
 RUN apt-get update && \
     apt-get install -y \
         autoconf \
