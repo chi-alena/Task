@@ -47,9 +47,9 @@ HTSlib URL scheme handlers present:
     mem:	 mem
 ```
 
- ```
- docker run task samtools --help | head -n 3
+```
+docker run task samtools --help | head -n 3
 
  Program: samtools (Tools for alignments in the SAM format)
  Version: 1.12 (using htslib 1.12)
-    ```
+```
